@@ -1,14 +1,31 @@
 # -*- coding: utf-8 -*-
 
-# Define here the models for your scraped items
-#
-# See documentation in:
-# http://doc.scrapy.org/en/latest/topics/items.html
-
 import scrapy
 
 
-class PythonbrasilItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class ConferenceItem(scrapy.Item):
+
+    table_name = 'conferences'
+    url = scrapy.Field()
+    name = scrapy.Field()
+    dates = scrapy.Field()
+    location = scrapy.Field()
+    website = scrapy.Field()
+    contact = scrapy.Field()
+    code = scrapy.Field()
+    attendance = scrapy.Field()
+
+
+class PaperItem(scrapy.Item):
+
+    table_name = 'papers'
+    abstract = scrapy.Field()
+    conference = scrapy.Field()
+    keywords = scrapy.Field()
+    title = scrapy.Field()
+    publisher = scrapy.Field()
+    publication_year = scrapy.Field()
+    publication_title = scrapy.Field()
+    article_number = scrapy.Field()
+    url = scrapy.Field()
+    authors = scrapy.Field()
