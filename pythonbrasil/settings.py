@@ -8,6 +8,7 @@
 #     http://doc.scrapy.org/en/latest/topics/settings.html
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
+from fake_useragent import UserAgent
 
 BOT_NAME = 'pythonbrasil'
 
@@ -16,8 +17,7 @@ NEWSPIDER_MODULE = 'pythonbrasil.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'pythonbrasil (+http://www.yourdomain.com)'
-
+ER_AGENT = UserAgent()['chrome']
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
 
