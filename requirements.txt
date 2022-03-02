@@ -30,7 +30,7 @@ pyOpenSSL==17.3.0
 pypiwin32==220
 queuelib==1.4.2
 requests==2.18.4
-Scrapy==1.4.0
+Scrapy==1.8.2
 scrapy-splash==0.7.2
 scrapyd==1.2.0
 selenium==3.6.0
